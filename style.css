@@ -54,7 +54,7 @@ img{
 }
 
 img:hover{
-	padding: 8px;
+	padding: 7px;
 	outline-style: dashed;
 	outline-color: red;
 	outline-width: 2px;
