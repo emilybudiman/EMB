@@ -9,8 +9,34 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 style="left: 30px;"> <a></a> EMILY BUDIMAN </h1>
-    <h1 style="right: 30px;"> <a> </a>INFO</h1>
+    <h1 style="left: 25px;"> <a href="https://emilybudiman.github.io/EMB/"> EMILY BUDIMAN </a></h1>
+    <div class="dropdown" style="right: 25px">
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+      </script>
+
+      <button onclick="myFunction()" class="dropbtn">INFO</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="mailto: emilybudiman@gmail.com">EMAIL</a>
+          <a href="#">RESUME</a>
+         <a href="#">ABOUT</a>
+       </div>
+    </div>
     <div class="row">
       <div class="column">
           <img src="IMGS/BOOKS/DESCOMSS24/cover_transparent.png" style="width: 100%;">
@@ -36,5 +62,8 @@
           <img src="IMGS/CHARCOAL/boyface.png" style="width: 100%;">
       </div>
     </div>
+
+    
+
   </body>
 </html>
