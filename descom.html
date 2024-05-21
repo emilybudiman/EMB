@@ -9,3 +9,30 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+     <h1 style="left: 25px;"> <a href="https://emilybudiman.github.io/EMB/"> EMILY BUDIMAN </a></h1>
+    <div class="dropdown" style="right: 25px">
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+      </script>
+
+      <button onclick="myFunction()" class="dropbtn">INFO</button>
+        <div id="myDropdown" class="dropdown-content">
+          <p>emilygbudiman@gmail.com</p>
+          <p style="font-weight: normal; font-size: 12px; letter-spacing: 2px; text-align: left;">I'm an Indonesian designer currently based in New York, pursuing a BFA in Communication Design at Parsons School of Design.  I have a strong background in traditional drawing and painting, heavily influencing my approach to digital work.</p>
+       </div>
+    </div>
